@@ -1,7 +1,7 @@
 /*
- * normal.c
+ * main.c
  *
- *  Created on: 2026/05/19
+ *  Created on: 2026/05/21
  *      Author: Students of Introduction Lectures on Special Subjects
  */
 
