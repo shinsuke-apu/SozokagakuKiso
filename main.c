@@ -42,16 +42,13 @@ int main(int argc, char *argv[]) {
 
 	check_matrix(c, N);
 	printf("計算時間は %.3f 秒です．\n", (double) (t1 - t0) / CLOCKS_PER_SEC);
+	fflush(stdout);
 	return 0;
 }
 
 double** alloc_matrix(int n) {
 	double **m;
 	int i;
-//	m = (double**) malloc(n * sizeof(double*));
-//	for (i = 0; i < n; i++) {
-//		m[i] = (double*) malloc(n * sizeof(double));
-//	}
 
 	m = (double**) malloc(n * sizeof(double*));
 	m[0] = (double*) malloc(n * n * sizeof(double));
